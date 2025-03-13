@@ -41,6 +41,10 @@ The project uses a **UNet-based model** designed for image segmentation:
 
 ## Results
 
+*Accuracy*
+
 ![Train and Validation Accurancy](Img/Accuracy.jpg)
+
+*Loss*
 
 ![Tran and Validation Loss](Img/loss.jpg)
