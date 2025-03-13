@@ -30,7 +30,7 @@ The project uses a **UNet-based model** designed for image segmentation:
 - **Bottleneck:** Bridge layer with convolutional filters
 - **Decoder:** Expanding path with transposed convolutions and skip connections
 
-![Architecture](Img/Architecture.png)
+<img src="Img/Architecture.png" alt="Model Architecture" width="50%">
 
 ### Summary:
 - Input size: `(128, 128, 3)`
