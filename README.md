@@ -12,7 +12,7 @@ Identifying cell nuclei is crucial for biological research because:
 ---
 
 ## Dataset
-- **Source:** 2018 Data Science Bowl
+- **Source:** [2018 Data Science Bowl](https://www.kaggle.com/competitions/data-science-bowl-2018/overview)
 - **Structure:**
   - **Images:** RGB images of cells
   - **Labels:** Binary mask images representing nucleus locations
@@ -30,10 +30,12 @@ The project uses a **UNet-based model** designed for image segmentation:
 - **Bottleneck:** Bridge layer with convolutional filters
 - **Decoder:** Expanding path with transposed convolutions and skip connections
 
+![Architecture](Img/Architecture.png)
+
 ### Summary:
 - Input size: `(128, 128, 3)`
 - Output size: `(128, 128, 1)`
-- Loss function: Binary cross-entropy
+- Loss function: SparseCategoricalCrossentropy
 - Optimizer: Adam
 - Metric: Accuracy
 
